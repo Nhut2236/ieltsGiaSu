@@ -1,0 +1,29 @@
+-----SQL SERVER--------
+Description: SQL FOR DATABASE (IELTS GIA SU)
+
+// Create Table Users
+
+CREATE TABLE Users(
+    Id nvarchar(100) NOT NULL,
+    Password nvarchar(100) NOT NULL,
+    PRIMARY KEY (Id)
+);
+
+// Create Table Comment
+
+CREATE TABLE Comment(
+    Id nvarchar(50) NOT NULL,
+    ServiceType nvarchar(255) NOT NULL,
+    Content ntext,
+    Rate int,
+    CreatedAt nvarchar(20),
+    PRIMARY KEY (Id)
+);
+
+// INSERT ONE USER FOR TESTING
+
+INSERT INTO table_name (Id, Password)
+VALUES ('4aae210d-1fc9-4c3f-8eae-c276e5b0853d', '78765b2655eb96c414e9dbea66795bb5');
+
+Note:
+- Password using md5 Encryption. ( converted from 'abc-12345' )
