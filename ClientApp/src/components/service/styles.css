@@ -1,0 +1,28 @@
+.service-type{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    height: 150px;
+}
+.service-type:focus, .service-type:active {
+    background-color: white;
+    color:  #be1d2f;
+}
+.title-inside{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.icon-inside{
+    font-size: 50px;
+}
+
+.button-danger{
+    width: 100%;
+    border-radius: 20px;
+}
+.service-type.active {
+    background-color: white;
+    color:  #be1d2f;
+}
