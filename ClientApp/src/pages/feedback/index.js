@@ -7,7 +7,7 @@ import { CUSTOMER_SERVICE, SECURITY_SERVICE, CLEANING_SERVICE, QUESTION_FEEDBACK
 import { Input } from 'antd';
 import { Button } from "react-bootstrap";
 import { message } from 'antd';
-import { HOME } from "../../router";
+import { THANKYOU } from "../../router";
 
 const Feedback = () => {
   const { TextArea } = Input;
@@ -92,7 +92,7 @@ const Feedback = () => {
         body: JSON.stringify(formData),
       }).then(res => {
           showMessage("Successfully", "success");
-          history.push(HOME);
+          history.push(THANKYOU);
       });
   }; 
 
